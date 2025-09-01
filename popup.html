@@ -1,21 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Popup-Retrivl</title>
+    <title>Extrair Dados:</title>
     <style>
       body {
-        width: 300px;
+        width: 350px;
         padding: 10px;
         font-family: Arial, sans-serif;
-      }
-      textarea {
-        width: 100%;
-        height: 150px;
-        margin-top: 10px;
-        padding: 5px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
       }
       button {
         background-color: blue;
@@ -30,13 +21,16 @@
       button:hover {
         background-color: #0056b3;
       }
+      .send-Button {
+        background-color: #28a745;
+      }
+      .send-Button:hover {
+        background-color: #218838;
+      }
     </style>
   </head>
   <body>
-    <button id="extractTextButton">Extrair Texto</button>
-    <button id="extractMetaButton">Extrair metadados</button>
-    <textarea id="extractedText" readonly></textarea>
-    <textarea id="extractedMeta" readonly></textarea>
+    <button id="sendToStreamlitButton" class="send-button">Enviar</button>
     <script src="popup.js"></script>
   </body>
 </html>
